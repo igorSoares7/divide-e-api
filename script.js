@@ -1,11 +1,21 @@
-function somarNumeros(){
-   const numero = document.getElementById('resultadoSoma');
+function execute(){
+   const valorResultado = document.getElementById('resultadoSoma');
    const numeroUm = document.getElementById('formUm').value;
    const numeroDois = document.getElementById('formDois').value;
-   const operacao = Number(numeroUm) + Number(numeroDois);
-   numero.innerHTML = operacao;
+   const primeiroValor = Number(numeroUm);
+   const segundoValor = Number(numeroDois);
+   const operacao = somarNumeros(primeiroValor, segundoValor)
+
+   valorResultado.innerHTML = operacao;
    
 }
+
+function somarNumeros(primeiroValor, segundoValor){
+   return primeiroValor + segundoValor;
+}
+
+
+
 
 async function buscarPokemon(){
    const valueInput = document.getElementById('formPoke').value;
@@ -26,4 +36,8 @@ async function buscarAPI(valueInput){
    return response.json()
 
 
+}
+
+module.exports = {
+   somarNumeros
 }
