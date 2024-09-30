@@ -1,6 +1,6 @@
 import "./style.css"
 import { resultadoDivisao, divideNumeros, pegaValorDoInput, transformaNumber, iniciaEvento} from "./moduloCalculadora";
-import { buscarAPI, pegaElementoInteiro, buscaNomeNaAPI, buscaImgNaAPI } from "./moduloBuscaPokemon";
+import { buscarAPI, pegaElementoInteiro, buscaNomeNaAPI, buscaImgNaAPI} from "./moduloBuscaPokemon";
 
 
 iniciaEvento("botaoDividir", "click", execute)
