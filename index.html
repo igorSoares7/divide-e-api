@@ -4,8 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
   <title>Document</title>
 </head>
 
@@ -13,30 +11,30 @@
   <header>Treinando</header>
   <main>
     
-      <div id="caixa-decima">
-        <div id="caixa-form">
-          <input type="text" id="formUm" placeholder="Digite um número">
-          <input type="text" id="formDois" placeholder="Digite um número">
-          <button onclick="execute()"> Somar </button>
-        </div>
-
-        <div id="square">
-          <span>Resultado:</span>
-          <span id="resultadoSoma">0</span>
-        </div>
+    <div id="caixa-decima">
+      <div id="caixa-form">
+        <input type="text" id="formUm" placeholder="Digite um número">
+        <input type="text" id="formDois" placeholder="Digite um número">
+        <button id="botaoDividir"> Dividir </button>
       </div>
-
-      <div id="caixa-debaixo">
-        <div id="caixa-form">
-          <input type="text" id="formPoke" placeholder="ID Pokemon">
-          <button onclick="buscarPokemon()"> Buscar </button>
-        </div>
-
-        <div id="square">
-          <span id="nomePoke">Nome:</span>
-          <img src="" id="imgPoke"> 
-        </div>
-        
+      
+      <div id="square">
+        <span>Resultado:</span>
+        <span id="resultadoSoma">0</span>
+      </div>
+    </div>
+    
+    <div id="caixa-debaixo">
+      <div id="caixa-form">
+        <input type="text" id="formPoke" placeholder="ID Pokemon">
+        <button id="botaoPokemon"> Buscar </button>
+      </div>
+      
+      <div id="square">
+        <span id="nomePoke">Nome:</span>
+        <img src="" id="imgPoke"> 
+      </div>
+      
     </div>
   </main>
   <aside>
@@ -47,5 +45,6 @@
     <p>Construído por:</p>
     <span>Igor Soares</span>
   </footer>
-
-</html>
+  
+  <script type="module" src="index.js"></script>
+  </html>
