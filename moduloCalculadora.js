@@ -31,6 +31,3 @@ export function resultadoDivisao(valorResultado) {
 
 }
 
-module.exports = {
-    divideNumeros
-}
