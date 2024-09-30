@@ -1,5 +1,6 @@
-const {somarNumeros} = require('.');
+const {divideNumeros} = require('./moduloCalculadora');
 
-test("Soma dois números", () => {
-    expect(somarNumeros(1,1)).toBe(2)
+test("Divide dois números", () => {
+    expect(divideNumeros(10,2)).toBe(2)
+    expect(divideNumeros(15,3)).toBe(3)
 })
