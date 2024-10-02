@@ -1,6 +1,6 @@
-import "./style.css"
-import { resultadoDivisao, divideNumeros, pegaValorDoInput, transformaNumber, iniciaEvento} from "./moduloCalculadora";
-import { buscarAPI, pegaElementoInteiro, buscaNomeNaAPI, buscaImgNaAPI} from "./moduloBuscaPokemon";
+import "./src/assets/scss/style.scss"
+import { resultadoDivisao, divideNumeros, pegaValorDoInput, transformaNumber, iniciaEvento} from "./src/js/moduloCalculadora.js";
+import { buscarAPI, pegaElementoInteiro, buscaNomeNaAPI, buscaImgNaAPI} from "./src/js/moduloBuscaPokemon.js";
 
 
 iniciaEvento("botaoDividir", "click", execute)

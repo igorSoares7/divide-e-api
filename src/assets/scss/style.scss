@@ -13,10 +13,7 @@ body{
     ;
     
 }
-body > * {
-    border: solid 3px yellow;
 
-}
 header{
     grid-area: header;
     font-size: 2em;
@@ -27,7 +24,7 @@ header{
 main{
     grid-area: main;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 10px;
