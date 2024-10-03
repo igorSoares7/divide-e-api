@@ -4,7 +4,6 @@ import { buscarAPI, pegaElementoInteiro, buscaNomeNaAPI, buscaImgNaAPI} from "./
 
 
 iniciaEvento("botaoDividir", "click", execute)
-
 function execute() {
    const InputUm = pegaValorDoInput('formUm')
    const InputDois = pegaValorDoInput('formDois')

@@ -1,0 +1,24 @@
+@mixin bordas($style: solid, $pixels: 1px, $color: $corBordas){
+    border: $style, $pixels, $color;
+}
+
+@mixin displayFlex($flexDirection: row, $justifyContent: center){
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: $justifyContent;
+}
+
+@mixin borderRadius($pxRadius: 3px){
+    border-radius: $pxRadius
+}
+
+@mixin textoFooter(){
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+@mixin sizeElement($width: 0px, $height: 0px){
+    width: $width;
+    height: $height
+};

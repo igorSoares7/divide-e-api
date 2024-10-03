@@ -1,123 +1,79 @@
-body{
-    display: grid;
-    background-color: #cef5ec;;
-    margin: 0px;
-    height: 100vh;
-    box-sizing: border-box;
-    grid-template-columns: 0.2fr 0.8fr;
-    grid-template-rows: 0.1fr 0.8fr 0.1fr;
-    grid-template-areas: 
-    "aside header"
-    "main main"
-    "footer footer"
-    ;
-    
-}
+@import '_reset.scss';
+@import '_cores.scss';
+@import '_mixins.scss';
+@import 'layout.scss';
 
-header{
-    grid-area: header;
+
+header {
     font-size: 2em;
     padding: 15px;
     text-align: center;
 
+    #titulo {
+        font-size: 1.5em;
+    }
 }
-main{
-    grid-area: main;
-    display: flex;
-    flex-direction: row;
+
+main {
+    @include displayFlex();
     align-items: center;
-    justify-content: center;
     gap: 10px;
-    
 
+    .caixa-principal {
+        @include bordas();
+        @include displayFlex();
+        background-color: $backgroundDiv;
+        gap: 10px;
+        width: 400px;
+        padding: 20px;
+
+        .caixa-secundaria {
+            @include displayFlex(column);
+            gap: 10px;
+        }
+
+        .caixa-secundaria>* {
+            @include bordas();
+            @include sizeElement(200px, 38px);
+            @include borderRadius();
+            text-align: center;
+        }
+    }
+
+    .caixa-result {
+        @include displayFlex(column, flex-start);
+        @include bordas();
+        @include borderRadius();
+        @include sizeElement(150px, 150px);
+        background-color: $backgroundQuadradoResult;
+        padding-top: 5px;
+        padding-left: 5px;
+        box-sizing: border-box;
+
+        #resultadoSoma {
+            box-sizing: border-box;
+            padding-top: 35px;
+            align-self: center;
+            font-size: 2em;
+        }
+    }
 }
-aside{
-    display: flex;
+
+aside {
+    @include displayFlex(row, space-around);
     align-items: center;
-    justify-content: space-around;
-}
-aside > * {
-    height: 50px;
-    width: 140px;
-    border-radius: 3px;
-    border: solid 1px black
-}
-footer{
-    grid-area: footer;
-    text-align: center;
-    font-size: 1em;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+
+    button {
+
+        @include bordas();
+        @include borderRadius();
+        background-color: $backgroundBotao;
+        height: 50px;
+        width: 140px;
+    }
+
 }
 
-#square{
-    display: flex;
-    border: solid 1px black;
-    border-radius: 3px;
-    width: 150px;
-    height: 150px;
-    background-color: #C3CFD9;
-    padding-top: 5px;
-    padding-left: 5px;
-    box-sizing: border-box;
-    flex-direction: column;
-    
+footer {
+    @include textoFooter()
 }
-
-#resultadoSoma, #imgPoke{
-    align-self: center;
-}
-
-
-
-
-#resultadoSoma{
-    box-sizing: border-box;
-    padding-top: 35px;
-    align-self:center;
-    font-size: 2em;
-}
-
-
-#caixa-decima, #caixa-debaixo{
-    border: solid 1px black;
-    flex-direction: row;
-    display: flex;
-    gap: 10px;
-    width: 400px;
-    padding: 20px;
-    justify-content: center;
-    background-color: #DFE6ED;
-    
-}
-
-#caixa-form{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    
-    
-}
-
-#caixa-form > * {
-    height: 38px;
-    width: 200px;
-    margin: 0px;
-    padding: 0px;
-    border-radius: 3px;
-    border: solid 1px black;
-    text-align: center;
- 
-  
-}
-
-
-button{
-    background-color: #90989c;
-}
-
-
-
-
-

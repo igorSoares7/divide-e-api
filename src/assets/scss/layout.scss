@@ -1,0 +1,25 @@
+body{
+    display: grid;
+    height: 100vh;
+    box-sizing: border-box;
+    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-rows: 0.1fr 0.8fr 0.1fr;
+    grid-template-areas: 
+    "aside header"
+    "main main"
+    "footer footer"
+    ;
+    
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
